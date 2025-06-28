@@ -1,0 +1,125 @@
+.contact {
+  max-width: 1096px;
+  margin: auto;
+  padding-top: 166px;
+  .location {
+    .location__disc {
+      color: #6e6f75;
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+    ul {
+      li {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 37px;
+        align-items: flex-start;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        img {
+          margin-top: 5px;
+        }
+        b {
+          color: var(--secondary-clr);
+          font-size: 18px;
+          line-height: 30px;
+        }
+        p {
+          color: #6e6f75;
+        }
+      }
+    }
+  }
+  .contact__form {
+    max-width: 648px;
+    margin-left: auto;
+    @include breakpoint(lg){
+       max-width: 100%;
+    }
+    h5 {
+      margin-bottom: 30px;
+    }
+    input {
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      background-color: white;
+      padding: 22px 20px;
+      outline: none;
+      margin-bottom: 20px;
+      @include breakpoint(md){
+        padding: 19px 17px;
+      }
+    }
+    textarea {
+      @extend input;
+      margin-bottom: 0;
+      min-height: 203px;
+      @include breakpoint(md){
+        min-height: 180px;
+      }
+    }
+    .common__btn {
+      background-color: var(--main-clr);
+      border: 1px solid var(--main-clr);
+      margin-top: 20px;
+    }
+    .custom-select {
+      position: relative;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .select-styled {
+      display: block;
+      padding: 22px 20px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      cursor: pointer;
+      @include justify();
+      span{
+        opacity: 0.7;
+      }
+      i{
+        color: var(--main-clr);
+      }
+    }
+
+    .select-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .select-option {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .select-option:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}
+.map{
+    max-width: 1096px;
+    margin: auto;
+    margin-bottom: 181px;
+    iframe{
+        width: 100%;
+        min-height: 468px;
+    }
+}

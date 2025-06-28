@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWeb - Blog Details</title>
+    <!-- --------- Link Bootstrap Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1cbbb02fe6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- --------- Link slick slider  -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <!-- --------- Link Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <!-- --------- Link Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <!-- --------- Link popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+
+    <!-- --------- Link Bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <!-- --------- Link Custom css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- --------------- Start Header ------------ -->
+    <header class="header">
+      <!-- --- Top header start -->
+      <div class="header__top d-lg-block d-none">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center header__top_left">
+              <p class="d-flex align-items-center time">
+                <i class="bi bi-clock"></i>
+                <span> &nbsp; 24x7 Service</span>
+              </p>
+              <p>
+                <span>E block Saket New Delhi - 110017</span>
+              </p>
+            </div>
+            <div class="d-flex align-items-center header__top_contact">
+              <p class="email">Codewebcrafters@gmail.com</p>
+              <span class="line"></span>
+              <p class="phone">8920773164</p>
+              <span class="line"></span>
+              <ul class="d-flex align-items-center icons">
+                <li>
+                  <a href="https://www.facebook.com/share/1CoV5PTXPF/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/codeweb_crafters?igsh=MW41am82eTZmdHFkcw==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --- Top header End -->
+
+      <!-- --- Bottom header Start -->
+      <div class="header__bottom">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a href="index.html" class="d-flex align-items-center header__bottom_logo">
+                <img src="assets/img/logo.png" alt="CodeWeb Logo" />
+                <span>CodeWeb</span>
+              </a>
+            </div>
+            <nav class="header__bottom_navbar">
+              <ul class="d-xl-flex menu__list">
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="index.html"> Home </a>
+                    <!-- <i class="bi bi-chevron-down"></i> -->
+                  </div>
+<!-- 
+                  <ul class="dropdown__container_menu">
+                    <li><a href="index.html">Home 1</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="about.html"> About Us </a>
+                  </div>
+                </li>
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="services.html"> Services </a>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+
+                  <ul class="dropdown__container_menu">
+                    <li>
+                      <a href="services.html">Serives</a>
+                    </li>
+                    <li>
+                      <a href="service_details.html">Service Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="#"> Pages </a>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+
+                  <ul class="dropdown__container_menu">
+                    <li>
+                      <a href="faq.html">Faq's</a>
+                    </li>
+                    <li>
+                      <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                      <a href="project_details.html">Project Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="blog.html"> Blog </a>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+
+                  <ul class="dropdown__container_menu">
+                    <li>
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog_details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__container">
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-1"
+                  >
+                    <a href="contact.html"> Contact Us </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="d-xl-block d-none">
+              <a href="" class="common__btn">
+                <span> Get Started Now</span>
+                <img src="assets/icons/arrow-up-right.svg" alt="" />
+              </a>
+            </div>
+            <div class="menu__icon d-block d-xl-none">
+              <i class="bi bi-list"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --- Bottom header End -->
+    </header>
+    <!-- --------------- End Header ------------ -->
+
+    <!-- --------------- Start page header ----------- -->
+    <section class="page__header position-relative">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-xl-between justify-content-center align-items-center"
+          >
+            <img
+              src="assets/img/pageHeader/Group_78_3.svg"
+              alt=""
+              class="img-fluid left__pei"
+            />
+            <img
+              src="assets/img/pageHeader/Group727.svg"
+              alt=""
+              class="left__arrow img-fluid"
+            />
+            <div
+              class="text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
+              <h2>Blog Details</h2>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <p>Blog Details</p>
+              </div>
+            </div>
+            <img
+              src="assets/img/pageHeader/Group726.png"
+              alt=""
+              class="img-fluid right__arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------- End page header ----------- -->
+
+    <!-- --------------- Start blog details ----------- -->
+    <section class="blog__details py__130">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <article>
+              <img
+                src="assets/img/blogs/Rectangle9.png"
+                alt=""
+                class="w-100 thumb__img"
+              />
+              <div class="first__para">
+                <ul class="d-flex flex-wrap gap-4">
+                  <li>
+                    <img src="assets/icons/user-black.svg" alt="" />
+                    <span>William Dalton</span>
+                  </li>
+                  <li>
+                    <img src="assets/icons/comments-black.svg" alt="" />
+                    <span>04 Comments</span>
+                  </li>
+                  <li>
+                    <img src="assets/icons/clender.svg" alt="" />
+                    <span>12, January 2025</span>
+                  </li>
+                </ul>
+                <h2
+                  class="t__54"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
+                  How We Designed the EcoMart E-commerce Experience
+                </h2>
+                <p>
+                  Discover how CodeWeb partnered with EcoMart to create a seamless, modern e-commerce platform. Our team focused on user experience, mobile responsiveness, and advanced features to drive engagement and sales for this growing online retailer.
+                </p>
+                <p>
+                  From initial research and wireframing to UI design and development, every step was tailored to EcoMart's brand and customer needs. The result is a robust, scalable site with personalized recommendations, secure payments, and real-time order tracking.
+                </p>
+              </div>
+              <blockquote
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
+                <b>
+                  "Working with CodeWeb was a game-changer for our business. The new platform is fast, intuitive, and our customers love the fresh look and easy navigation."
+                </b>
+                <p>
+                  <span></span>
+                  Priya Sharma, EcoMart CEO
+                </p>
+              </blockquote>
+              <div class="row img__gallery">
+                <div class="col-md-6">
+                  <img
+                    src="assets/img/blogs/Rectangle9.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                  <div class="position-relative">
+                    <img
+                      src="assets/img/blogs/Rectangle99.png"
+                      alt=""
+                      class="w-100"
+                    />
+                    <a href="https://youtu.be/UVLRVzrOKZk" class="video_icon video-play">
+                      <img src="assets/icons/Frame_20.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="second__para">
+                <h5 class="t__28">Project Highlights</h5>
+                <p>
+                  - Mobile-first design and advanced product filtering
+                  - Integrated payment gateways and logistics
+                  - 40% increase in conversion rate post-launch
+                </p>
+                <p>
+                  Our creative approach ensured that EcoMart stands out in a competitive market, delivering both style and substance for online shoppers.
+                </p>
+              </div>
+              <div
+                class="d-flex justify-content-between flex-wrap align-items-center share__option"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
+                <div class="d-flex align-items-center gap-4">
+                  <h6>Tags:</h6>
+                  <button class="active">Design</button>
+                  <button>Marketing</button>
+                </div>
+                <div class="d-flex align-items-center gap-4 mt-3 mt-sm-0">
+                  <h6>Share:</h6>
+                  <ul class="d-flex justify-content-center gap-3">
+                    <li>
+                      <a href="https://www.facebook.com/share/1CoV5PTXPF/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/codeweb_crafters?igsh=MW41am82eTZmdHFkcw==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <!-- comments start -->
+            <div class="comments">
+              <h1 class="t__54">
+                Comments
+                <span>02</span>
+              </h1>
+
+              <div
+                class="comment"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
+                <div class="main__comment">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="user">
+                      <img
+                        src="assets/img/blogs/comment1.png"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="t__22">John Smith</h5>
+                        <p>Graphic Designer</p>
+                      </div>
+                    </div>
+                    <button class="reply">Reply</button>
+                  </div>
+                  <p class="text">
+                    Transfer details Choose the amount you want to send abroad,
+                    select how your receiver wants to get the money, and lastly,
+                    how you want to pay. You will always see our fees upfront,
+                  </p>
+                </div>
+                <span class="border__full"></span>
+                <div class="reply__comment">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="user">
+                      <img
+                        src="assets/img/blogs/comment2.png"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="t__22">John Smith</h5>
+                        <p>Graphic Designer</p>
+                      </div>
+                    </div>
+                    <button class="reply">Reply</button>
+                  </div>
+                  <p class="text">
+                    Transfer details Choose the amount you want to send abroad,
+                    select how your receiver wants to get the money, and lastly,
+                    how you want to pay. You will always see our fees upfront,
+                  </p>
+                </div>
+              </div>
+              <div
+                class="comment"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+              >
+                <div class="main__comment">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="user">
+                      <img
+                        src="assets/img/blogs/comment1.png"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="t__22">John Smith</h5>
+                        <p>Graphic Designer</p>
+                      </div>
+                    </div>
+                    <button class="reply">Reply</button>
+                  </div>
+                  <p class="text">
+                    Transfer details Choose the amount you want to send abroad,
+                    select how your receiver wants to get the money, and lastly,
+                    how you want to pay. You will always see our fees upfront,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- comments end -->
+
+            <div
+              class="leave__replay"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
+              <h2 class="t__54">Leave A Reply</h2>
+              <p>
+                Your email address will not be published. Required fields are
+                marked *
+              </p>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" placeholder="Your Email" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name=""
+                      id=""
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1 w-100">
+                    <input type="checkbox" name="" id="cehck" class="w-auto" />
+                    <label for="cehck"
+                      >Save my name, email, and website in this browser for the
+                      next time I comment.</label
+                    >
+                  </div>
+                  <div>
+                    <button class="common__btn mt-4 mt-md-0">
+                      Post A Comment
+                      <img
+                        src="assets/icons/arrow-up-rignt-black.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- -- Side bar -->
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <aside class="sidebar">
+              <div class="search__box">
+                <label for="search" class="t__22">Search</label>
+                <div class="position-relative">
+                  <input id="search" type="text" placeholder="Search Now" />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <!-- -- Categories -->
+              <div class="categories pt__60">
+                <h5 class="t__22">Categories</h5>
+                <ul>
+                  <li>
+                    <a href="">General Construction</a>
+                    <p>(09)</p>
+                  </li>
+                  <li>
+                    <a href="">Unique UI Design</a>
+                    <p>(12)</p>
+                  </li>
+                  <li>
+                    <a href="">General Graphic</a>
+                    <p>(06)</p>
+                  </li>
+                  <li>
+                    <a href="">Business Policy</a>
+                    <p>(09)</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- -- Categories -->
+
+              <!-- -- latest post -->
+              <div class="latest__post pt__60">
+                <h5 class="t__22">Latest Posts</h5>
+                <ul>
+                  <li>
+                    <a href="">
+                      <img
+                        src="assets/img/blogs/Rectangle9.png"
+                        alt=""
+                        class="thumb__img"
+                      />
+                    </a>
+                    <div>
+                      <a href="">
+                        Normal That Has Evolved From here this site modern ...
+                      </a>
+                      <p>
+                        <img src="assets/icons/clender.svg" alt="" />
+                        <span>18, January 2025</span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="assets/img/blogs/Rectangle9.png"
+                        alt=""
+                        class="thumb__img"
+                      />
+                    </a>
+                    <div>
+                      <a href="">
+                        Normal That Has Evolved From here this site modern ...
+                      </a>
+                      <p>
+                        <img src="assets/icons/clender.svg" alt="" />
+                        <span>18, January 2025</span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="assets/img/blogs/Rectangle9.png"
+                        alt=""
+                        class="thumb__img"
+                      />
+                    </a>
+                    <div>
+                      <a href="">
+                        Normal That Has Evolved From here this site modern ...
+                      </a>
+                      <p>
+                        <img src="assets/icons/clender.svg" alt="" />
+                        <span>18, January 2025</span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- -- latest post -->
+
+              <!-- -- Tags -->
+              <div class="tags pt__60">
+                <h5 class="t__22">Tags:</h5>
+                <ul>
+                  <li>
+                    <a href="" class="active">Design</a>
+                  </li>
+                  <li>
+                    <a href="">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="">Creative</a>
+                  </li>
+                  <li>
+                    <a href="">IT</a>
+                  </li>
+                  <li>
+                    <a href="">Business</a>
+                  </li>
+                  <li>
+                    <a href="">Optimization</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------- End blog details ----------- -->
+
+    <!-- --------------- start Footer ----------- -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Subscribe Form -->
+        <div class="subscribe">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2>Subscribe to our newsletter & get more information</h2>
+            </div>
+            <div class="col-lg-4 mt-5 mt-lg-0">
+              <div>
+                <input type="text" placeholder="Your Email" />
+                <button class="common__btn">
+                  <span>Subscribe Now</span>
+                  <img src="assets/icons/arrow-up-rignt-black.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Subscribe Form -->
+
+        <!-- -------Logo and socal icon -->
+        <div class="row footer__lo_co">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <a href="" class="d-flex align-items-center footer__logo" style="flex-direction:column;align-items:center;">
+                <img src="assets/img/logo.png" alt="CodeWeb Logo" />
+                <span style="font-size:1.2rem;font-weight:bold;margin-top:8px;">CodeWeb</span>
+              </a>
+            </div>
+            <ul class="d-flex justify-content-center gap-3 footer__socal">
+              <li>
+                <a href="https://www.facebook.com/share/1CoV5PTXPF/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/codeweb_crafters?igsh=MW41am82eTZmdHFkcw==" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- -------Logo and socal icon -->
+        <hr class="footer__border" />
+        <!-- ---- Info -->
+        <div class="row footer__info">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <div class="footer__info_address">
+              <h3 class="footer__info_group">Address</h3>
+              <p>2096 New Market, New Road North West Bengal, NY, USA</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div>
+              <h3 class="footer__info_group">Our Contact</h3>
+              <ul class="footer__info_contact">
+                <li>
+                  <img src="assets/icons/Frame5.svg" alt="" />
+                  <p>hellodigiv@gmail.com</p>
+                </li>
+                <li>
+                  <img src="assets/icons/Frame6.svg" alt="" />
+                  <p>+48 93939 0239</p>
+                </li>
+                <li>
+                  <img src="assets/icons/Frame7.svg" alt="" />
+                  <p>Mon - Fri 10:00 - 18:00</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div>
+              <h3 class="footer__info_group">Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Our All Services</a>
+                </li>
+                <li>
+                  <a href="">About Digiv</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <div>
+              <h3 class="footer__info_group">Help</h3>
+              <ul>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+                <li>
+                  <a href="">FAQ's</a>
+                </li>
+                <li>
+                  <a href="">Privacy Pllicy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ---- Info -->
+
+        <div class="row footer__copyright">
+          <div class="col-12">
+            <hr class="footer__border" />
+            <p class="text-center">
+              © Copyright 2025 All Rights Reserved by CodeWeb
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --------------- End Footer ----------- -->
+
+    <!-- --------- Link jquery Js -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- --------- Link Bootstrap Js -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+    <!-- --------- Link slick slider Js -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- --------- Link custom Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- --------- Link popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- --------- Link custom Js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
