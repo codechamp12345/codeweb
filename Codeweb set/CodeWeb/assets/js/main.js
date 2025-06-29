@@ -111,6 +111,69 @@ AOS.init();
 $('.video-play').magnificPopup({
     type: 'iframe'
 });
+
+// Video functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const videoElement = document.querySelector('.video__element');
+    const videoWrapper = document.querySelector('.video__wrapper');
+    const videoOverlay = document.querySelector('.video__overlay');
+    const videoLoading = document.querySelector('.video__loading');
+    
+    if (videoElement && videoWrapper && videoOverlay && videoLoading) {
+        // Ensure video plays on mobile devices
+        videoElement.setAttribute('playsinline', '');
+        videoElement.setAttribute('webkit-playsinline', '');
+        
+        // Add click to play/pause functionality
+        videoWrapper.addEventListener('click', function() {
+            if (videoElement.paused) {
+                videoElement.play();
+                videoOverlay.style.opacity = '0';
+            } else {
+                videoElement.pause();
+                videoOverlay.style.opacity = '1';
+            }
+        });
+        
+        // Show overlay when video is paused
+        videoElement.addEventListener('pause', function() {
+            videoOverlay.style.opacity = '1';
+        });
+        
+        // Hide overlay when video is playing
+        videoElement.addEventListener('play', function() {
+            videoOverlay.style.opacity = '0';
+        });
+        
+        // Handle video loading
+        videoElement.addEventListener('loadstart', function() {
+            videoLoading.style.display = 'block';
+            videoWrapper.style.opacity = '0.7';
+        });
+        
+        videoElement.addEventListener('canplay', function() {
+            videoLoading.style.display = 'none';
+            videoWrapper.style.opacity = '1';
+        });
+        
+        // Handle video errors
+        videoElement.addEventListener('error', function() {
+            console.log('Video failed to load');
+            videoLoading.style.display = 'none';
+            videoWrapper.style.background = 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)';
+        });
+        
+        // Optimize for mobile performance
+        if (window.innerWidth <= 768) {
+            videoElement.setAttribute('preload', 'metadata');
+        }
+        
+        // Hide loading initially if video is already loaded
+        if (videoElement.readyState >= 2) {
+            videoLoading.style.display = 'none';
+        }
+    }
+});
 /*END VIDEO JS*/
 
 }); 
