@@ -29,15 +29,17 @@
       <div class="header__top d-lg-block d-none">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center header__top_left">
-              <a href="tel:+918920773164" class="header__top_link"><i class="bi bi-telephone"></i> 8920773164</a>
-              <span class="mx-2">|</span>
-              <a href="mailto:codewebcrafters@gmail.com" class="header__top_link"><i class="bi bi-envelope"></i> codewebcrafters@gmail.com</a>
-              <span class="mx-2">|</span>
-              <span>E block Saket New Delhi - 110017</span>
+            <div class="d-flex align-items-center header__top_left" style="gap: 24px;">
+              <a href="tel:+918920773164" class="header__top_link d-flex align-items-center" style="gap: 6px;"><i class="bi bi-telephone"></i> 8920773164</a>
+              <span>|</span>
+              <a href="mailto:codewebcrafters@gmail.com" class="header__top_link d-flex align-items-center" style="gap: 6px;"><i class="bi bi-envelope"></i> codewebcrafters@gmail.com</a>
+              <span>|</span>
+              <span class="d-flex align-items-center" style="gap: 6px;"><i class="bi bi-geo-alt"></i> E block Saket New Delhi - 110017</span>
+              <span>|</span>
+              <span class="d-flex align-items-center" style="gap: 6px;"><i class="bi bi-clock"></i> 24x7 Service Available</span>
             </div>
             <div class="d-flex align-items-center header__top_contact">
-              <ul class="d-flex align-items-center icons">
+              <ul class="d-flex align-items-center icons" style="gap: 12px; margin: 0;">
                 <li><a href="https://www.facebook.com/share/1CoV5PTXPF/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com/codeweb_crafters?igsh=MW41am82eTZmdHFkcw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
@@ -1154,14 +1156,14 @@
     <footer class="footer">
       <div class="container">
         <div class="row footer__lo_co justify-content-center align-items-center">
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
               <a href="index.html" class="d-flex align-items-center footer__logo" style="flex-direction:column;align-items:center;">
-                <img src="assets/img/logo.png" alt="CodeWeb Logo" />
+            <div class="d-flex justify-content-center">
                 <span style="font-size:1.2rem;font-weight:bold;margin-top:8px;">CodeWeb</span>
-              </a>
-            </div>
+                <img src="assets/img/logo.png" alt="CodeWeb Logo" />
+                <h5>CodeWeb</h5>
             <ul class="d-flex justify-content-center gap-3 footer__socal">
+            </div>
+            <ul class="footer__socal">
               <li><a href="https://www.facebook.com/share/1CoV5PTXPF/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
               <li><a href="https://www.instagram.com/codeweb_crafters?igsh=MW41am82eTZmdHFkcw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
@@ -1179,9 +1181,9 @@
             <div>
               <h3 class="footer__info_group">Our Contact</h3>
               <ul class="footer__info_contact">
-                <li><img src="assets/icons/email.svg" alt="" /><a href="mailto:codewebcrafters@gmail.com">codewebcrafters@gmail.com</a></li>
-                <li><img src="assets/icons/phone.svg" alt="" /><a href="tel:+918920773164">8920773164</a></li>
                 <li><img src="assets/icons/clock.svg" alt="" />24x7 Service Available</li>
+                <li><img src="assets/icons/phone.svg" alt="" /><a href="tel:+918920773164">8920773164</a></li>
+                <li><img src="assets/icons/clock.svg" alt="" /><span style="color: var(--grayWhite-clr); font-weight: 600;">24x7 Service Available</span></li>
               </ul>
             </div>
           </div>
@@ -1197,16 +1199,14 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <div>
-              <h3 class="footer__info_group">Help</h3>
               <ul>
+              <h3 class="footer__info_group">Help</h3>
+              <ul class="footer__info">
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html">FAQ's</a></li>
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </div>
-          </div>
-        </div>
         <div class="row footer__copyright">
           <div class="col-12">
             <hr class="footer__border" />
@@ -1214,6 +1214,8 @@
               © Copyright 2025 All Rights Reserved by CodeWeb
             </p>
           </div>
+            © Copyright 2025 All Rights Reserved by <a href="index.html">CodeWeb</a>
+          </p>
         </div>
       </div>
     </footer>
